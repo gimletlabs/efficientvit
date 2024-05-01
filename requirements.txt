@@ -1,7 +1,7 @@
 torch
 torchvision
 einops
-opencv-python
+opencv-python-headless
 timm
 tqdm
 torchprofile

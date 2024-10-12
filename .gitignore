@@ -1,9 +1,14 @@
 *.DS_Store*
 .vscode
+.python-version
 __pycache__/
 .dev/
 .exp/
 
 assets/checkpoints/
 assets/export_models/
+build/
 coco/
+dist/
+efficientvit/efficientvit_gml.egg-info/
+efficientvit/version.py

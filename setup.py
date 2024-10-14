@@ -25,10 +25,9 @@ import os
 import subprocess
 import sys
 
-from setuptools import find_packages, setup
+from setuptools import setup
 
-# groundingdino version info
-version = "0.1.8"
+version = "0.1.9"
 package_name = "efficientvit-gml"
 cwd = os.path.dirname(os.path.abspath(__file__))
 
@@ -130,15 +129,9 @@ if __name__ == "__main__":
     setup(
         name=package_name,
         version=version,
-        # author="International Digital Economy Academy, Shilong Liu",
         url="https://github.com/mit-han-lab/efficientvit",
         description="open-set object detector",
         license=license,
         install_requires=parse_requirements("requirements.txt"),
-        packages=find_packages(
-            exclude=(
-                "configs",
-                "tests",
-            )
-        ),
+        package_dir = {"": "efficientvit"},
     )

@@ -27,7 +27,7 @@ import sys
 
 from setuptools import setup
 
-version = "0.1.9"
+version = "0.1.10"
 package_name = "efficientvit-gml"
 cwd = os.path.dirname(os.path.abspath(__file__))
 
@@ -133,5 +133,5 @@ if __name__ == "__main__":
         description="open-set object detector",
         license=license,
         install_requires=parse_requirements("requirements.txt"),
-        package_dir = {"": "efficientvit"},
+        package_dir = {"efficientvit": "efficientvit"},
     )
